@@ -12,6 +12,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json({ limit: "50mb" }));
 app.use(cors);
 
-app.use("/help", mainMiddleware, routes);
+app.use("/hello", mainMiddleware, routes);
 
 module.exports = app;
